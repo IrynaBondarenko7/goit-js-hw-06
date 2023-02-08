@@ -36,3 +36,8 @@ const galleryItem = images
   .join("");
 console.log(galleryItem);
 galleryRef.insertAdjacentHTML("afterbegin", galleryItem);
+
+galleryRef.style.display = "flex";
+galleryRef.style.listStyle = "none";
+galleryRef.style.gap = "30px";
+galleryRef.style.justifyContent = "center";
