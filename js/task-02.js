@@ -8,10 +8,12 @@ const ingredients = [
 ];
 
 const ingredientsRef = document.querySelector("#ingredients");
+const liArray = [];
 
 ingredients.forEach((elItem) => {
   const ingredientItem = document.createElement("li");
   // ingredientItem.innerHTML = elItem;
   ingredientItem.textContent = elItem;
-  ingredientsRef.append(ingredientItem);
+  liArray.push(ingredientItem);
 });
+ingredientsRef.append(...liArray);
