@@ -9,5 +9,5 @@ button.addEventListener("click", onButtonClick);
 
 function onButtonClick(event) {
   document.body.style.backgroundColor = getRandomHexColor();
-  text.textContent = getRandomHexColor();
+  text.textContent = document.body.style.backgroundColor;
 }
